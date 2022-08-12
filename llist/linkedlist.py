@@ -1,10 +1,10 @@
-from llist.listnode import ListNode
+from listnode import ListNode
 
 
 class LinkedList:
 
     def __init__(self):
-        self.head = None
+        self.head: ListNode = None
 
     def push_back(self, value):
 

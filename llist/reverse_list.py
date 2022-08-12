@@ -1,5 +1,5 @@
-from llist.linkedlist import LinkedList
-from llist.listnode import ListNode
+from listnode import ListNode
+from llist_helper import generate_random_linked_list
 
 
 def reverse_list_recursive_helper(current: ListNode, prev: ListNode):
@@ -32,14 +32,7 @@ def reverse_list_iterative(head: ListNode):
 
 def main():
 
-    linked_list = LinkedList()
-
-    linked_list.push_back(2)
-    linked_list.push_back(10)
-    linked_list.push_back(7)
-    linked_list.push_back(5)
-    linked_list.push_back(12)
-    linked_list.push_back(9)
+    linked_list = generate_random_linked_list(4, 10000, 90000)
 
     linked_list.print_list()
 
